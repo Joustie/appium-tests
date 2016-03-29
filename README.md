@@ -14,19 +14,21 @@ export DEV=true
 
 Install appium and start the appium server for your device, please refer to:
 
-http://appium.io
+http://appium.io  
 https://github.com/appium/appium/blob/master/README.md
 
 ###to run tests using Sauce Labs cloud
 
-Sign up here
+[Sign up here](https://saucelabs.com/home)  
+Export the package created for the test using ios-todo-on-sauce-9.2.sh (fill in your saucelabs user and key).  
 
 Configure your environment:
 
-export SAUCE_USERNAME=<SAUCE_USERNAME>
-export SAUCE_ACCESS_KEY=<SAUCE_ACCESS_KEY>
-
 look in ios-todo-on-sauce-9.2.sh and fill in SAUCE_USERNAME and SAUCE_ACCESS_KEY
+
+```
+./ios-todo-on-sauce-9.2.sh   
+```
 
 
 
