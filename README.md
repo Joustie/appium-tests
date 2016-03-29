@@ -27,7 +27,7 @@ mocha ios-todo
 
 [Sign up here](https://saucelabs.com/home)  
   
-Export the package created for the test using ios-todo-on-sauce-9.2.sh (fill in your saucelabs user and key).  
+Export the package created for the test to temporary storage in your Saucelabs account  using ios-todo-on-sauce-9.2.sh (fill in your saucelabs user and key).  
 
 Configure your environment:
 
