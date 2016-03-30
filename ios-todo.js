@@ -42,7 +42,7 @@ describe("ios simple", function () {
     allPassed = allPassed && this.currentTest.state === 'passed';
   });
 
-  it("click to make it editable and fill in value", function () {
+  it("should be possible to create a new todo ", function () {
     return driver
 	.elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]/UIATextField[1]").click()
         .elementByXPath("//UIAApplication[1]/UIAWindow[4]/UIAKeyboard[1]")
@@ -52,7 +52,7 @@ describe("ios simple", function () {
 	.should.eventually.exist
       });
 
-  it("enter another value", function () {
+  it("should be possible to create another new todo", function () {
     return driver
         .elementByXPath("//UIAApplication[1]/UIAWindow[4]/UIAKeyboard[1]")
 	.should.eventually.exist
@@ -61,7 +61,7 @@ describe("ios simple", function () {
 	.should.eventually.exist
       });
 
-  it("select first value, mark complete", function () {
+  it("should be possible to mark the first todo complete", function () {
     return driver
         .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]/UIASwitch[3]")
 	.should.eventually.exist
@@ -70,12 +70,12 @@ describe("ios simple", function () {
 	.should.eventually.exist
       });
 
-  it("delete first value", function () {
+  it("should be possible to delete the first todo", function () {
     return driver
         .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]/UIAButton[1]").click()
       });
 
-  it("delete second value", function () {
+  it("should be possible to delete the second todo and make the delete button dissappear", function () {
     return driver
         .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]/UIAButton[1]").click()
         .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]/UIAButton[1]")
